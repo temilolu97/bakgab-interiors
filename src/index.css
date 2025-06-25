@@ -1,19 +1,1 @@
 @import "tailwindcss";
-
-@layer base {
-  html {
-    background-color: #fffbe9;
-  }
-}
-
-@layer utilities {
-  .bg-gold {
-    background-color: #FFD700;
-  }
-  .text-gold {
-    color: #FFD700;
-  }
-  .border-gold {
-    border-color: #FFD700;
-  }
-}

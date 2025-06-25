@@ -47,7 +47,15 @@ export default function CartPage({ cart, updateQty, removeFromCart }: { cart: { 
           </li>
         ))}
       </ul>
-      <div className="text-right text-2xl font-bold text-blue-900">Total: ₦{cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0).toLocaleString()}</div>
+      <div className="text-right text-2xl font-bold text-blue-900 mb-6">Total: ₦{cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0).toLocaleString()}</div>
+      <div className="flex justify-end">
+        <button
+          className="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold shadow hover:bg-blue-800 transition text-lg disabled:opacity-50"
+          disabled={cart.length === 0}
+        >
+          Checkout
+        </button>
+      </div>
     </div>
   );
 } 

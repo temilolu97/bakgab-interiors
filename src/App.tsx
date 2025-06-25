@@ -7,22 +7,22 @@ import LandingPage from './pages/LandingPage'
 import ProductsPage from './pages/ProductsPage'
 import ProductDetailsPage from './pages/ProductDetailsPage'
 import CartPage from './pages/CartPage'
-import logo from '../src/assets/logo.png'
+import logo from './assets/logo.png'
 
 function Footer() {
   return (
-    <footer className="w-full bg-white border-t border-gold p-8 text-sm text-gray-700 mt-auto">
+    <footer className="w-full bg-gray-100 border-t p-8 text-sm text-gray-700 mt-auto">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
         {/* Column 1: Contact */}
         <div>
-          <div className="font-bold mb-2 text-gold">Contact</div>
+          <div className="font-bold mb-2 text-blue-900">Contact</div>
           <div>08029051394</div>
           <div>info@bakgabdigital.com</div>
           <div>4, Salako Street, Off Oliiyide, Mushin, Lagos State, Nigeria</div>
         </div>
         {/* Column 2: Policies */}
         <div>
-          <div className="font-bold mb-2 text-gold">Policies & Info</div>
+          <div className="font-bold mb-2 text-blue-900">Policies & Info</div>
           <div>Free delivery in Lagos on orders above ₦250,000</div>
           <div>7-day return policy on eligible items</div>
           <div>Privacy: Your data is confidential and secured.</div>
@@ -30,10 +30,10 @@ function Footer() {
         </div>
         {/* Column 3: Terms & Copyright */}
         <div>
-          <div className="font-bold mb-2 text-gold">Terms & Payment</div>
+          <div className="font-bold mb-2 text-blue-900">Terms & Payment</div>
           <div>By shopping on our platform, you agree to our return, refund, and delivery terms.</div>
           <div>We accept bank transfers, debit/credit cards, and secure online payments.</div>
-          <div className="mt-4 text-xs text-gray-500">© 2025 <a href="https://www.bakgabinteriors.com" className="underline text-gold">www.bakgabinteriors.com</a> — Powered by BAKGAB DIGITAL ENTERPRISE</div>
+          <div className="mt-4 text-xs text-gray-500">© 2025 <a href="https://www.bakgabinteriors.com" className="underline">www.bakgabinteriors.com</a> — Powered by BAKGAB DIGITAL ENTERPRISE</div>
         </div>
       </div>
     </footer>
@@ -43,11 +43,11 @@ function Footer() {
 function CartIcon({ quantity }: { quantity: number }) {
   return (
     <div className="relative">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#FFD700" className="w-7 h-7">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 text-blue-800">
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437m0 0L7.11 14.21a2.25 2.25 0 002.197 1.79h7.392a2.25 2.25 0 002.197-1.79l1.273-7.938a1.125 1.125 0 00-1.11-1.322H5.25m0 0L4.125 4.125M6.75 21a.75.75 0 100-1.5.75.75 0 000 1.5zm10.5 0a.75.75 0 100-1.5.75.75 0 000 1.5z" />
       </svg>
       {quantity > 0 && (
-        <span className="absolute -top-2 -right-2 bg-gold text-white text-xs font-bold rounded-full px-2 py-0.5 shadow">{quantity}</span>
+        <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-bold rounded-full px-2 py-0.5 shadow">{quantity}</span>
       )}
     </div>
   );
@@ -56,13 +56,13 @@ function CartIcon({ quantity }: { quantity: number }) {
 function Navbar({ cartQuantity }: { cartQuantity: number }) {
   const location = useLocation();
   return (
-    <nav className="w-full bg-white border-b border-gold shadow-sm sticky top-0 z-20">
+    <nav className="w-full bg-white border-b shadow-sm sticky top-0 z-20">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
-        <Link to="/" className="font-extrabold text-2xl text-gold tracking-tight flex items-center gap-2">
-          <span className="inline-block">BAKGAB Interiors</span>
+        <Link to="/">
+          <img src={logo} className='h-20 w-[300px]' alt="BAKGAB Interiors Logo"/>
         </Link>
         <div className="flex items-center gap-6">
-          <Link to="/products" className={`hover:text-gold font-medium transition ${location.pathname.startsWith('/products') ? 'text-gold' : 'text-gray-700'}`}>Products</Link>
+          <Link to="/products" className={`hover:text-blue-700 font-medium transition ${location.pathname.startsWith('/products') ? 'text-blue-700' : 'text-gray-700'}`}>Products</Link>
           <Link to="/cart" className="relative">
             <CartIcon quantity={cartQuantity} />
           </Link>
