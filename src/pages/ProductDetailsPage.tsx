@@ -19,7 +19,7 @@ export default function ProductDetailsPage({ addToCart }: { addToCart: (product:
         <div className="mb-4 text-gray-700">{product.description}</div>
         <div className="text-sm text-gray-500 mb-6">{product.category}</div>
         <button
-          className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-800 hover:scale-105 transition-transform"
+          className="bg-blue-700 border border-black text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-800 hover:scale-105 transition-transform"
           onClick={() => addToCart(product)}
         >
           Add to Cart
