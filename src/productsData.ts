@@ -1,0 +1,175 @@
+export type Product = {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  category: string;
+  image: string;
+};
+
+export const products: Product[] = [
+  // Living Room Furniture
+  {
+    id: 'sofa-set',
+    name: '3-Seater Luxury Sofa Set',
+    description: 'Elegant and comfortable 3-seater sofa set for your living room.',
+    price: 520000,
+    category: 'Living Room Furniture',
+    image: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    id: 'center-table',
+    name: 'Modern Center Table (Marble Finish)',
+    description: 'Stylish marble finish center table for modern living rooms.',
+    price: 85000,
+    category: 'Living Room Furniture',
+    image: 'https://images.unsplash.com/photo-1643558544531-bff73bbffc28?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    id: 'tv-console',
+    name: 'TV Console (Up to 65")',
+    description: 'Spacious TV console suitable for TVs up to 65 inches.',
+    price: 130000,
+    category: 'Living Room Furniture',
+    image: 'https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/81/6258104/1.jpg?7005',
+  },
+  {
+    id: 'coffee-table',
+    name: 'Classic Wooden Coffee Table',
+    description: 'Classic wooden coffee table for timeless elegance.',
+    price: 72000,
+    category: 'Living Room Furniture',
+    image: 'https://plus.unsplash.com/premium_photo-1680546330888-f995d2d64571?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    id: 'accent-chair',
+    name: 'Velvet Accent Chair',
+    description: 'Luxurious velvet accent chair for a touch of sophistication.',
+    price: 58000,
+    category: 'Living Room Furniture',
+    image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  // Bedroom Collection
+  {
+    id: 'bed-frame',
+    name: '6 by 6 Bed Frame + Side Drawers',
+    description: 'Spacious bed frame with side drawers for extra storage.',
+    price: 280000,
+    category: 'Bedroom Collection',
+    image: 'https://images.unsplash.com/photo-1723258343563-7d71a55d6dfa?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    id: 'mattress',
+    name: 'High-Density Orthopedic Mattress',
+    description: 'Supportive orthopedic mattress for restful sleep.',
+    price: 155000,
+    category: 'Bedroom Collection',
+    image: 'https://img.kwcdn.com/product/fancy/48466185-78ce-4479-9e04-8c94f5826ae1.jpg?imageView2/2/w/800/q/70/format/webp',
+  },
+  {
+    id: 'wardrobe',
+    name: 'Wooden Wardrobe (3 Doors)',
+    description: 'Spacious 3-door wooden wardrobe for organized storage.',
+    price: 240000,
+    category: 'Bedroom Collection',
+    image: 'https://pricesnow.com.ng/wp-content/uploads/2019/03/1-814.jpg.webp',
+  },
+  {
+    id: 'duvet-set',
+    name: 'Duvet Set (6x6)',
+    description: 'Soft and cozy duvet set for a comfortable night.',
+    price: 52000,
+    category: 'Bedroom Collection',
+    image: 'https://img.kwcdn.com/product/fancy/712e3409-e466-403a-a71f-812c606627b8.jpg?imageView2/2/w/800/q/70/format/webp',
+  },
+  {
+    id: 'lamp-drawer',
+    name: 'Bedside Lamp',
+    description: 'Bedside lamp with a convenient drawer stand.',
+    price: 65000,
+    category: 'Bedroom Collection',
+    image: 'https://img.kwcdn.com/product/fancy/631f6bb0-b9e0-4c2f-86c2-4ac90ba5d062.jpg?imageView2/2/w/800/q/70/format/webp',
+  },
+  // Office Furniture
+  {
+    id: 'office-table',
+    name: 'Executive Office Table',
+    description: 'Spacious executive office table for productivity.',
+    price: 180000,
+    category: 'Office Furniture',
+    image: 'https://img.kwcdn.com/product/fancy/caead93b-29f9-4044-bb70-419c44b791fd.jpg?imageView2/2/w/800/q/70/format/webp',
+  },
+  {
+    id: 'swivel-chair',
+    name: 'Ergonomic Swivel Chair',
+    description: 'Comfortable ergonomic swivel chair for office use.',
+    price: 95000,
+    category: 'Office Furniture',
+    image: 'https://img.kwcdn.com/product/fancy/bf1a7f88-4277-47c0-a4f3-096676f9f8cd.jpg?imageView2/2/w/800/q/70/format/webp',
+  },
+  {
+    id: 'bookshelf',
+    name: 'Bookshelf',
+    description: 'Sturdy bookshelf for your office or home.',
+    price: 68000,
+    category: 'Office Furniture',
+    image: 'https://img-1.kwcdn.com/product/fancy/838af0c0-7073-45c0-8cfd-bedea76071f4.jpg?imageView2/2/w/800/q/70/format/webp',
+  },
+  {
+    id: 'reception-desk',
+    name: 'Reception Desk',
+    description: 'Professional reception desk for office entrances.',
+    price: 145000,
+    category: 'Office Furniture',
+    image: 'https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/35/4450501/1.jpg?4152',
+  },
+  {
+    id: 'visitor-chair-set',
+    name: 'Office Visitor Chair Set (2 pcs)',
+    description: 'Set of 2 comfortable visitor chairs for your office.',
+    price: 78000,
+    category: 'Office Furniture',
+    image: 'https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/0756021/1.jpg?4909',
+  },
+  // Home Décor & Accessories
+  {
+    id: 'wall-mirror',
+    name: 'Decorative Wall Mirror',
+    description: 'Beautiful decorative wall mirror for any room.',
+    price: 56000,
+    category: 'Home Décor & Accessories',
+    image: 'https://i.ebayimg.com/images/g/-oQAAOSwG5Fl6~9L/s-l1600.webp',
+  },
+  {
+    id: 'wall-art',
+    name: 'Wall Art Canvas (Framed)',
+    description: 'Framed wall art canvas to enhance your décor.',
+    price: 65000,
+    category: 'Home Décor & Accessories',
+    image: 'https://i.ebayimg.com/images/g/AeQAAOSwWG5k0cPQ/s-l1600.webp',
+  },
+  {
+    id: 'indoor-plant',
+    name: 'Indoor Plant in Ceramic Pot',
+    description: 'Lively indoor plant in a stylish ceramic pot.',
+    price: 53500,
+    category: 'Home Décor & Accessories',
+    image: 'https://i.ebayimg.com/images/g/qn0AAOSwxFFnbZru/s-l1600.webp',
+  },
+  {
+    id: 'wall-clock',
+    name: 'Wall Clock (Vintage Style)',
+    description: 'Vintage style wall clock for a classic touch.',
+    price: 51000,
+    category: 'Home Décor & Accessories',
+    image: 'https://i.ebayimg.com/images/g/qfwAAOSwuiJoPtdV/s-l1600.webp',
+  },
+  {
+    id: 'floor-lamp',
+    name: 'Floor Lamp (Wooden Stand)',
+    description: 'Wooden stand floor lamp for warm lighting.',
+    price: 60000,
+    category: 'Home Décor & Accessories',
+    image: 'https://i.ebayimg.com/images/g/aNIAAOSwI-JnTq1I/s-l1600.webp',
+  },
+]; 

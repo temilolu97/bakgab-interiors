@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": false,
+     "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "module": "esnext",
+    "target": "es5",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
