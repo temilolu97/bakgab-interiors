@@ -85,7 +85,7 @@ export default function LandingPage() {
       <section>
         <h2 className="text-2xl font-bold mb-6 text-gold">🛍️ Featured Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {products.slice(0, 4).map((product, idx) => (
+          {products.slice(0, 4).map((product) => (
             <Link
               to={`/products/${product.id}`}
               key={product.id}

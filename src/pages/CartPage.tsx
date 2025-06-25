@@ -6,7 +6,7 @@ export default function CartPage({ cart, updateQty, removeFromCart }: { cart: { 
     <div className="max-w-3xl mx-auto p-4">
       <h2 className="text-3xl font-bold mb-6 text-blue-900">Your Cart</h2>
       <ul className="divide-y divide-gray-100 mb-6">
-        {cart.map((item, idx) => (
+        {cart.map((item) => (
           <li key={item.product.id} className="flex items-center gap-4 py-4 bg-white rounded-xl shadow-sm border border-gray-100 mb-3 px-4">
             <img
               src={item.product.image}
