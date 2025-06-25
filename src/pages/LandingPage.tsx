@@ -10,7 +10,12 @@ export default function LandingPage() {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-blue-900">Welcome to BAKGAB Interiors</h1>
           <p className="mb-4 text-lg text-gray-700">Elevate your space with timeless elegance. We provide premium-quality furniture and interior items that bring style, comfort, and functionality into homes and offices.</p>
           <p className="mb-6 text-gray-600">From classic wooden pieces to modern luxury designs, explore our curated collection of furnishings made for every lifestyle.</p>
-          <Link to="/products" className="inline-block bg-gold text-white px-8 py-3 rounded-lg font-semibold shadow hover:bg-white hover:text-gold hover:border-gold border border-gold transition">Shop Now →</Link>
+          <Link
+            to="/products"
+            className="inline-block bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold shadow border-2 border-black hover:bg-white hover:text-black hover:border-black transition focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+          >
+            Shop Now →
+          </Link>
         </div>
         <div className="flex-1 flex justify-center">
           <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=400&q=80" alt="BAKGAB Interiors Hero" className="rounded-xl shadow-lg w-full max-w-xs" />
@@ -19,7 +24,7 @@ export default function LandingPage() {
       {/* About & Values */}
       <section className="mb-12">
         <div className=" gap-8 items-center bg-white rounded-xl shadow-lg p-8">
-         
+
           {/* Text side */}
           <div>
             <h2 className="text-3xl font-extrabold mb-4 text-gold flex items-center gap-2">
