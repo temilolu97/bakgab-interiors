@@ -7,7 +7,7 @@ import LandingPage from './pages/LandingPage'
 import ProductsPage from './pages/ProductsPage'
 import ProductDetailsPage from './pages/ProductDetailsPage'
 import CartPage from './pages/CartPage'
-import logo from './assets/logo2.png'
+import logo from './assets/bakgablogo (1).png'
 
 function Footer() {
   return (
@@ -59,7 +59,9 @@ function Navbar({ cartQuantity }: { cartQuantity: number }) {
     <nav className="w-full bg-gray-50 border-b shadow-sm sticky top-0 z-20">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <Link to="/">
-          <img src={logo} className='h-15' alt="BAKGAB Interiors Logo"/>
+        <div className=' h-15 flex items-center justify-center'>
+          <img src={logo} className='h-full object-contain' alt="BAKGAB Interiors Logo"/>
+        </div>
         </Link>
         <div className="flex items-center gap-6">
           <Link to="/products" className={`hover:text-blue-700 font-medium transition ${location.pathname.startsWith('/products') ? 'text-blue-700' : 'text-gray-700'}`}>Products</Link>
