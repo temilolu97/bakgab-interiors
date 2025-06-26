@@ -7,7 +7,7 @@ import LandingPage from './pages/LandingPage'
 import ProductsPage from './pages/ProductsPage'
 import ProductDetailsPage from './pages/ProductDetailsPage'
 import CartPage from './pages/CartPage'
-import logo from './assets/logo.png'
+import logo from './assets/logo2.png'
 
 function Footer() {
   return (
@@ -56,10 +56,10 @@ function CartIcon({ quantity }: { quantity: number }) {
 function Navbar({ cartQuantity }: { cartQuantity: number }) {
   const location = useLocation();
   return (
-    <nav className="w-full bg-white border-b shadow-sm sticky top-0 z-20">
+    <nav className="w-full bg-gray-50 border-b shadow-sm sticky top-0 z-20">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <Link to="/">
-          <img src={logo} className='h-20 w-[300px]' alt="BAKGAB Interiors Logo"/>
+          <img src={logo} className='h-15' alt="BAKGAB Interiors Logo"/>
         </Link>
         <div className="flex items-center gap-6">
           <Link to="/products" className={`hover:text-blue-700 font-medium transition ${location.pathname.startsWith('/products') ? 'text-blue-700' : 'text-gray-700'}`}>Products</Link>
