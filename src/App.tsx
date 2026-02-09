@@ -17,7 +17,7 @@ function Footer() {
         <div>
           <div className="font-bold mb-2 text-blue-900">Contact</div>
           <div>08029051394</div>
-          <div>info@bakgabdigital.com</div>
+          <div>info@bakgabinteriors.com</div>
           <div>4, Salako Street, Off Oliiyide, Mushin, Lagos State, Nigeria</div>
         </div>
         {/* Column 2: Policies */}
